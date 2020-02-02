@@ -1,0 +1,17 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="TextBox">
+        <Setter Property="FontFamily" Value="Ubuntu" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Margin" Value="0 5" />
+    </Style>
+    <Style Selector="TextBox /template/ Border">
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+    <Style Selector="TextBox:pointerover /template/ Border">
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderMidBrush}" />
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+</Styles>

@@ -1,0 +1,44 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="Expander /template/ ToggleButton#PART_toggle">
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border BorderThickness="0">
+                    <Grid ColumnDefinitions="Auto,Auto">
+                        <Border Grid.Column="0" Width="20" Height="20"
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center">
+                            <Path Fill="#ffffff"
+                                  HorizontalAlignment="Right"
+                                  VerticalAlignment="Center"
+                                  Data="M 0 2 L 4 6 L 0 10 Z" />
+                        </Border>
+                        <ContentPresenter Name="PART_ContentPresenter"
+                                          Grid.Column="1" 
+                                          Background="Transparent" 
+                                          Content="{TemplateBinding Content}" 
+                                          VerticalAlignment="Center" 
+                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Padding="{TemplateBinding Padding}"/>
+                    </Grid>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="Expander">
+        <Setter Property="Margin" Value="0" />
+    </Style>
+    <Style Selector="Expander /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
+    </Style>
+    <Style Selector="Expander /template/ ToggleButton#PART_toggle /template/ Border">
+        <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush}" />
+    </Style>
+    <Style Selector="Expander /template/ ToggleButton#PART_toggle:pointerover /template/ Border">
+        <Setter Property="BorderBrush" Value="Transparent" />
+    </Style>
+    <Style Selector="Expander:down:expanded /template/ ToggleButton#PART_toggle /template/ Path">
+        <Setter Property="Fill" Value="#ffffff" />
+    </Style>
+</Styles>

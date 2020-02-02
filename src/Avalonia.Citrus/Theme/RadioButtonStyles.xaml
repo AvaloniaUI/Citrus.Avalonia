@@ -1,0 +1,13 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="RadioButton">
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderLowBrush}"/>
+    </Style>
+    <Style Selector="RadioButton /template/ Ellipse#border">
+        <Setter Property="Fill" Value="{DynamicResource ThemeBorderLowBrush}" />
+    </Style>
+    <Style Selector="RadioButton:pointerover /template/ Ellipse#border">
+        <Setter Property="Stroke" Value="{DynamicResource ThemeBorderMidBrush}"/>
+        <Setter Property="Fill" Value="{DynamicResource ThemeBorderMidBrush}" />
+    </Style>
+</Styles>

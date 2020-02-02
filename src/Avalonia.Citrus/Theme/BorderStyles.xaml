@@ -1,0 +1,11 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="Border.Card">
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="BorderThickness" Value="2 1 2 4" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderMidColor}" />
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}" />
+        <Setter Property="Margin" Value="7" />
+    </Style>
+</Styles>

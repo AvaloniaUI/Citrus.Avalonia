@@ -1,0 +1,19 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="TextBlock">
+        <Setter Property="FontFamily" Value="Ubuntu" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+    <Style Selector="TextBlock.Heading">
+        <Setter Property="Margin" Value="0 10 0 5" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
+        <Setter Property="FontSize" Value="15" />
+    </Style>
+    <Style Selector="TextBlock.Caption">
+        <Setter Property="Foreground" Value="{DynamicResource ThemeControlHighBrush}" />
+    </Style>
+    <Style Selector="TextBlock.Accent">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightBrush}" />
+    </Style>
+</Styles>

@@ -1,0 +1,9 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="CheckBox">
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
+    </Style>
+    <Style Selector="CheckBox:pointerover">
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderMidBrush}" />
+    </Style>
+</Styles>

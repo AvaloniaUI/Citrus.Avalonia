@@ -1,0 +1,214 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="{DynamicResource ThemeBackgroundColor}"
+        Width="920" Height="630"
+        x:Class="Citrus.MainWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Menu option number one">
+                <MenuItem Header="With items">
+                    <MenuItem Header="First item" />
+                    <MenuItem Header="Second item" />
+                </MenuItem>
+                <MenuItem Header="Disabled" IsEnabled="False" />
+            </MenuItem>
+            <MenuItem Header="Menu option number two">
+                <MenuItem Header="With items">
+                    <MenuItem Header="First item" />
+                    <MenuItem Header="Second item" />
+                </MenuItem>
+                <MenuItem Header="Enabled" IsEnabled="True" />
+            </MenuItem>
+            <MenuItem Header="Switch theme" Command="{Binding ChangeTheme}" />
+        </Menu>
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <Border Classes="Card">
+                    <StackPanel>
+                        <TextBlock Classes="Heading" Text="Heading class" />
+                        <TextBlock Classes="Caption" Text="Caption class" />
+                        <TextBlock Margin="0 5" 
+                                   Text="Hi, I'm a tooltip! Please, hover over me."
+                                   ToolTip.Tip="Hello, this is magic!" />
+                        
+                        <!-- Radio buttons and check boxes -->
+                        <Grid Margin="0 5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <RadioButton Grid.Column="0" 
+                                         Content="Radio option" />
+                            <RadioButton Grid.Column="1" 
+                                         IsChecked="True"
+                                         Content="Another one" />
+                            <CheckBox Grid.Column="2" 
+                                      IsChecked="True"
+                                      Content="Check me!" />
+                        </Grid>
+                        
+                        <!-- Slider and progress bar -->
+                        <Slider Name="slider" Orientation="Horizontal" Value="35" Height="20" />
+                        <ProgressBar Orientation="Horizontal" 
+                                     Margin="0 5"
+                                     Height="20">
+                            <ProgressBar.Value>
+                                <Binding Path="#slider.Value" />
+                            </ProgressBar.Value>
+                        </ProgressBar>
+                        
+                        <!-- Text boxes and text areas -->
+                        <TextBox Watermark="This is the simple watermark example."
+                                 Text="{Binding Path=Message}" />
+                        <TextBox UseFloatingWatermark="True"
+                                 Watermark="This is the floating watermark example."
+                                 Text="If you enter some text, it will float to the top." />
+                        <TextBox IsEnabled="False" 
+                                 Text="This is the disabled text box." />
+                        <TextBox Height="50"
+                                 AcceptsReturn="True"
+                                 Text="This is the large text area."
+                                 SelectionStart="0" 
+                                 SelectionEnd="7" />
+                        <Grid Margin="0 5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <ComboBox Grid.Column="0" SelectedIndex="0">
+                                <ComboBoxItem Content="First option" />
+                                <ComboBoxItem Content="Second option" />
+                                <ComboBoxItem Content="Third option" />
+                            </ComboBox>
+                            <NumericUpDown Grid.Column="2"
+                                           Maximum="50"
+                                           Minimum="40"
+                                           Value="42" />
+                        </Grid>
+                        
+                        <!-- Buttons -->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0"
+                                    Content="Enabled button" />
+                            <Button Grid.Column="2"
+                                    IsEnabled="False"
+                                    Content="Disabled one" />
+                            <Button Grid.Column="4"
+                                    Classes="Primary"
+                                    Content="Primary button" />
+                        </Grid>
+                        <Grid Margin="0 5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <ToggleButton Grid.Column="0"
+                                          IsChecked="True"
+                                          Content="Toggle button" />
+                            <ToggleButton Grid.Column="2"
+                                          Classes="Primary"
+                                          IsChecked="False"
+                                          Content="Disabled toggle" />
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Border Classes="Card">
+                    <StackPanel>
+                        <TextBlock Classes="Heading" Text="Rich controls" />
+                        
+                        <!-- List views -->
+                        <ListBox VirtualizationMode="None">
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <TextBlock Text="Lorem ipsum dolor sit amet"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock Classes="Caption"
+                                               TextWrapping="Wrap"
+                                               Text="Consectetur adipiscing elit. Curabitur quis lectus dui." />
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem IsSelected="True">
+                                <StackPanel>
+                                    <TextBlock Text="Nam pharetra venenatis semper"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock Classes="Caption"
+                                               TextWrapping="Wrap"
+                                               Text="Cras leo purus, aliquet id ultricies id, tempus mauris." />
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                        
+                        <!-- Tabs -->
+                        <TabControl Margin="0 5">
+                            <TabItem Header="Page number one" HorizontalContentAlignment="Center">
+                                <TextBlock Classes="Caption" 
+                                           Text="Hello from the first tab!"
+                                           Margin="10" />
+                            </TabItem>
+                            <TabItem Header="Second page">
+                                <TextBlock Classes="Caption" 
+                                           Text="Hello from the second tab!"
+                                           Margin="10" />
+                            </TabItem>
+                            <TabItem Header="Disabled page" IsEnabled="False">
+                                <TextBlock Classes="Caption" 
+                                           Text="Hello from the second tab!"
+                                           Margin="10" />
+                            </TabItem>
+                        </TabControl>
+                        
+                        <!-- Expander -->
+                        <Expander Header="Expand me!" IsExpanded="True">
+                            <TextBlock Text="Hidden content here!"
+                                       Classes="Caption"
+                                       Margin="10" />
+                        </Expander>
+                        
+                        <!-- Tree control -->
+                        <Grid Margin="0 10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Calendar Grid.Column="0" 
+                                      FirstDayOfWeek="Monday" />
+                            <TreeView Grid.Column="2">
+                                <TreeViewItem Header="Fruit" IsSelected="True">
+                                    <TreeViewItem Header="Lime" />
+                                    <TreeViewItem Header="Orange" />
+                                    <TreeViewItem Header="Apple" />
+                                </TreeViewItem>
+                                <TreeViewItem Header="Colors" IsExpanded="True">
+                                    <TreeViewItem Header="Red" />
+                                    <TreeViewItem Header="Orange" />
+                                    <TreeViewItem Header="Green" />
+                                </TreeViewItem>
+                            </TreeView>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="ComboBox">
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
+        <Setter Property="Padding" Value="10" />
+    </Style>
+    <Style Selector="ComboBox /template/ Border">
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+    <Style Selector="ComboBox:pointerover /template/ Border">
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderMidBrush}" />
+    </Style>
+</Styles>
