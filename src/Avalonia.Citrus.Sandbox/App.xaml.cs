@@ -12,7 +12,7 @@ namespace Avalonia.Citrus.Sandbox
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopLifetime)
             {
                 var window = new MainWindow();
-                window.DataContext = new MainWindowViewModel(window);
+                window.DataContext = new MainWindowViewModel(new StyleManager(window));
                 desktopLifetime.MainWindow = window;
             }
             
