@@ -30,14 +30,19 @@ Then, reference the default theme (or, the night theme) from your `App.xaml` fil
     <StyleInclude Source="avares://Avalonia.Citrus/Citrus.xaml"/>
 
     <!-- To use the Sea theme:
-         1. Comment out the <StyleInclude /> line above^
-         2. Uncomment the line below <StyleInclude /> -->
+         1. Comment out all of the <StyleInclude /> lines.
+         2. Uncomment the <StyleInclude /> line below. -->
     <!-- <StyleInclude Source="avares://Avalonia.Citrus/Sea.xaml"/> -->
 
     <!-- To use the Rust theme:
-         1. Comment out the <StyleInclude /> line above^
-         2. Uncomment the line below <StyleInclude /> -->
+         1. Comment out all of the <StyleInclude /> lines.
+         2. Uncomment the <StyleInclude /> line below. -->
     <!-- <StyleInclude Source="avares://Avalonia.Citrus/Rust.xaml"/> -->
+
+    <!-- To use the Holidays theme:
+         1. Comment out all of the <StyleInclude /> lines.
+         2. Uncomment the <StyleInclude /> line below. -->
+    <!-- <StyleInclude Source="avares://Avalonia.Citrus/Holidays.xaml"/> -->
   </Application.Styles>
 </Application>
 ```

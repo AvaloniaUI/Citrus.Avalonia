@@ -6,8 +6,9 @@ namespace Avalonia.Citrus.Sandbox
 {
     public sealed class StyleManager
     {
-        public enum Theme { Citrus, Sea, Rust }
+        public enum Theme { Citrus, Sea, Rust, Holidays }
         
+        private readonly StyleInclude _holidaysStyle = CreateStyle("avares://Avalonia.Citrus/Holidays.xaml");
         private readonly StyleInclude _citrusStyle = CreateStyle("avares://Avalonia.Citrus/Citrus.xaml");
         private readonly StyleInclude _rustStyle = CreateStyle("avares://Avalonia.Citrus/Rust.xaml");
         private readonly StyleInclude _seaStyle = CreateStyle("avares://Avalonia.Citrus/Sea.xaml");
@@ -34,6 +35,7 @@ namespace Avalonia.Citrus.Sandbox
                 Theme.Citrus => _citrusStyle,
                 Theme.Sea => _seaStyle,
                 Theme.Rust => _rustStyle,
+                Theme.Holidays => _holidaysStyle,
                 _ => throw new ArgumentOutOfRangeException(nameof(theme))
             };
             
