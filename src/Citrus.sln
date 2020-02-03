@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Citrus", "Citrus\Citrus.csproj", "{F2095CAF-992A-4B77-8E8A-372571D627FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Citrus.Sandbox", "Avalonia.Citrus.Sandbox\Avalonia.Citrus.Sandbox.csproj", "{F2095CAF-992A-4B77-8E8A-372571D627FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.Citrus", "Avalonia.Citrus\Avalonia.Citrus.csproj", "{D02EB1E5-0D24-4139-BCCB-C62B13536D82}"
 EndProject

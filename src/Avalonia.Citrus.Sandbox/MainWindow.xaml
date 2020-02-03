@@ -1,8 +1,8 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Background="{DynamicResource ThemeBackgroundColor}"
-        Width="920" Height="630"
-        x:Class="Citrus.MainWindow">
+        x:Class="Avalonia.Citrus.Sandbox.MainWindow"
+        Width="920" Height="630">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

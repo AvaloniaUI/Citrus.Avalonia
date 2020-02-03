@@ -1,8 +1,7 @@
-﻿using Avalonia;
-using Avalonia.Dialogs;
+﻿using Avalonia.Dialogs;
 using Avalonia.ReactiveUI;
 
-namespace Citrus
+namespace Avalonia.Citrus.Sandbox
 {
     public static class Program
     {

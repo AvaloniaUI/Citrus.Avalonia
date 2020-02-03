@@ -14,7 +14,8 @@ The simplest way to get started is to add this repo as a [submodule](https://git
 mkdir ./external
 git submodule add git@github.com:worldbeater/Avalonia.Citrus.git ./external/citrus
 # Reference the ../external/citrus/src/Avalonia.Citrus/Avalonia.Citrus.csproj project then.
-# The ../external/citrus/src/Citrus/Citrus.csproj is the sandbox where you can browse the markup.
+# The ../external/citrus/src/Avalonia.Citrus.Sandbox/Avalonia.Citrus.Sandbox.csproj is 
+# the sandbox where you can browse the markup samples.
 ```
 
 Then, reference the default theme (or, the night theme) from your `App.xaml` file:
@@ -41,4 +42,4 @@ Then, reference the default theme (or, the night theme) from your `App.xaml` fil
 </Application>
 ```
 
-Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Avalonia.Citrus/blob/master/src/Citrus/MainWindow.xaml) for more examples.
+Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Avalonia.Citrus/blob/master/src/Avalonia.Citrus.Sandbox/MainWindow.xaml) for more examples.

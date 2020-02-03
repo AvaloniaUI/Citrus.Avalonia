@@ -7,7 +7,7 @@ using ReactiveUI.Fody.Helpers;
 using ReactiveUI.Validation.Extensions;
 using ReactiveUI.Validation.Helpers;
 
-namespace Citrus
+namespace Avalonia.Citrus.Sandbox
 {
     public sealed class MainWindowViewModel : ReactiveValidationObject<MainWindowViewModel>
     {
@@ -24,8 +24,13 @@ namespace Citrus
         {
             _window = window;
             _changeTheme = ReactiveCommand.Create(PerformThemeChange);
+            
+            // We add the style to the main window styles section,
+            // so it will override the default style defined in App.xaml. 
             _window.Styles.Add(_lightStyle);
             
+            // This is ReactiveUI.Validation magic, that supports
+            // INotifyDataErrorInfo <TextBox /> error messages.
             this.ValidationRule(x => x.Message,
                 message => !string.IsNullOrWhiteSpace(message),
                 "This text is not happy to be empty!");
@@ -38,6 +43,9 @@ namespace Citrus
 
         private void PerformThemeChange()
         {
+            // Here, we change the first style in the main window styles
+            // section, and the main window instantly refreshes. Remember
+            // to invoke such methods from the UI thread.
             switch (_theme)
             {
                 case Theme.Light:
@@ -57,7 +65,7 @@ namespace Citrus
         
         private static StyleInclude CreateStyle(string url) => 
             new StyleInclude(
-                new Uri("resm:Styles?assembly=Citrus")) 
+                new Uri("resm:Styles?assembly=Avalonia.Citrus.Sandbox")) 
                     {Source = new Uri(url)};
     }
 }
