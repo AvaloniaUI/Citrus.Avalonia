@@ -12,9 +12,9 @@ The simplest way to get started is to add this repo as a [submodule](https://git
 
 ```sh
 mkdir ./external
-git submodule add git@github.com:worldbeater/Avalonia.Citrus.git ./external/citrus
-# Reference the ../external/citrus/src/Avalonia.Citrus/Avalonia.Citrus.csproj project then.
-# The ../external/citrus/src/Avalonia.Citrus.Sandbox/Avalonia.Citrus.Sandbox.csproj is 
+git submodule add git@github.com:worldbeater/Citrus.Avalonia.git ./external/citrus
+# Reference the ../external/citrus/src/Citrus.Avalonia/Citrus.Avalonia.csproj project then.
+# The ../external/citrus/src/Citrus.Avalonia.Sandbox/Citrus.Avalonia.Sandbox.csproj is 
 # the sandbox where you can browse the markup samples.
 ```
 
@@ -27,24 +27,24 @@ Then, reference the default theme (or, the night theme) from your `App.xaml` fil
   <Application.Styles>
     <!-- The line below is the only thing you need to get started.
          Tested with Avalonia 0.9.0 only, although not with all controls. -->
-    <StyleInclude Source="avares://Avalonia.Citrus/Citrus.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Citrus.xaml"/>
 
     <!-- To use the Sea theme:
          1. Comment out all of the <StyleInclude /> lines.
          2. Uncomment the <StyleInclude /> line below. -->
-    <!-- <StyleInclude Source="avares://Avalonia.Citrus/Sea.xaml"/> -->
+    <!-- <StyleInclude Source="avares://Citrus.Avalonia/Sea.xaml"/> -->
 
     <!-- To use the Rust theme:
          1. Comment out all of the <StyleInclude /> lines.
          2. Uncomment the <StyleInclude /> line below. -->
-    <!-- <StyleInclude Source="avares://Avalonia.Citrus/Rust.xaml"/> -->
+    <!-- <StyleInclude Source="avares://Citrus.Avalonia/Rust.xaml"/> -->
 
     <!-- To use the Holidays theme:
          1. Comment out all of the <StyleInclude /> lines.
          2. Uncomment the <StyleInclude /> line below. -->
-    <!-- <StyleInclude Source="avares://Avalonia.Citrus/Holidays.xaml"/> -->
+    <!-- <StyleInclude Source="avares://Citrus.Avalonia/Holidays.xaml"/> -->
   </Application.Styles>
 </Application>
 ```
 
-Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Avalonia.Citrus/blob/master/src/Avalonia.Citrus.Sandbox/MainWindow.xaml) for more examples.
+Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Citrus.Avalonia/blob/master/src/Citrus.Avalonia.Sandbox/MainWindow.xaml) for more examples.

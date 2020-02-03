@@ -2,16 +2,16 @@ using System;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml.Styling;
 
-namespace Avalonia.Citrus.Sandbox
+namespace Citrus.Avalonia.Sandbox
 {
     public sealed class StyleManager
     {
         public enum Theme { Citrus, Sea, Rust, Holidays }
         
-        private readonly StyleInclude _holidaysStyle = CreateStyle("avares://Avalonia.Citrus/Holidays.xaml");
-        private readonly StyleInclude _citrusStyle = CreateStyle("avares://Avalonia.Citrus/Citrus.xaml");
-        private readonly StyleInclude _rustStyle = CreateStyle("avares://Avalonia.Citrus/Rust.xaml");
-        private readonly StyleInclude _seaStyle = CreateStyle("avares://Avalonia.Citrus/Sea.xaml");
+        private readonly StyleInclude _holidaysStyle = CreateStyle("avares://Citrus.Avalonia/Holidays.xaml");
+        private readonly StyleInclude _citrusStyle = CreateStyle("avares://Citrus.Avalonia/Citrus.xaml");
+        private readonly StyleInclude _rustStyle = CreateStyle("avares://Citrus.Avalonia/Rust.xaml");
+        private readonly StyleInclude _seaStyle = CreateStyle("avares://Citrus.Avalonia/Sea.xaml");
         private readonly Window _window;
 
         public StyleManager(Window window)
@@ -44,7 +44,7 @@ namespace Avalonia.Citrus.Sandbox
         
         private static StyleInclude CreateStyle(string url)
         {
-            var self = new Uri("resm:Styles?assembly=Avalonia.Citrus.Sandbox");
+            var self = new Uri("resm:Styles?assembly=Citrus.Avalonia.Sandbox");
             return new StyleInclude(self)
             {
                 Source = new Uri(url)

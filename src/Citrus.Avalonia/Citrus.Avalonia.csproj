@@ -7,11 +7,11 @@
         <Authors>Artyom Gorchakov and Contributors</Authors>
         <Copyright>Copyright (c) 2020 Artyom Gorchakov</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/worldbeater/avalonia.citrus</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/worldbeater/citrus.avalonia</PackageProjectUrl>
         <PackageDescription>Avalonia-exclusive experimental touch-friendly UI theme</PackageDescription>
         <Owners>worldbeater</Owners>
         <PackageTags>avalonia;avaloniaui;citrus;ui;theme</PackageTags>
-        <RepositoryUrl>https://github.com/worldbeater/avalonia.citrus</RepositoryUrl>
+        <RepositoryUrl>https://github.com/worldbeater/citrus.avalonia</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
     

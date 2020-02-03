@@ -5,7 +5,7 @@ using ReactiveUI.Fody.Helpers;
 using ReactiveUI.Validation.Extensions;
 using ReactiveUI.Validation.Helpers;
 
-namespace Avalonia.Citrus.Sandbox
+namespace Citrus.Avalonia.Sandbox
 {
     public sealed class MainWindowViewModel : ReactiveValidationObject<MainWindowViewModel>
     {

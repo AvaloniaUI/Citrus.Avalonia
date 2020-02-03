@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.9.0" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.0" />
+    <PackageReference Include="Avalonia.LinuxFramebuffer" Version="0.9.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.0" />
+    <PackageReference Include="ReactiveUI.Validation" Version="1.4.7" />
+    <PackageReference Include="ReactiveUI.Fody" Version="11.1.12" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Citrus.Avalonia\Citrus.Avalonia.csproj" />
+  </ItemGroup>
+
+</Project>

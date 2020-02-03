@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Citrus.Avalonia.Sandbox", "Citrus.Avalonia.Sandbox\Citrus.Avalonia.Sandbox.csproj", "{F2095CAF-992A-4B77-8E8A-372571D627FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Citrus.Avalonia", "Citrus.Avalonia\Citrus.Avalonia.csproj", "{BB238D42-157C-4C76-8DE6-315155E6D048}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2095CAF-992A-4B77-8E8A-372571D627FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2095CAF-992A-4B77-8E8A-372571D627FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2095CAF-992A-4B77-8E8A-372571D627FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2095CAF-992A-4B77-8E8A-372571D627FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB238D42-157C-4C76-8DE6-315155E6D048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB238D42-157C-4C76-8DE6-315155E6D048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB238D42-157C-4C76-8DE6-315155E6D048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB238D42-157C-4C76-8DE6-315155E6D048}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

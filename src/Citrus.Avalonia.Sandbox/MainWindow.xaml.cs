@@ -2,7 +2,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
 
-namespace Avalonia.Citrus.Sandbox
+namespace Citrus.Avalonia.Sandbox
 {
     public class MainWindow : ReactiveWindow<MainWindowViewModel>
     {
