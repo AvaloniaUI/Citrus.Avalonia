@@ -1,4 +1,4 @@
-![License](https://img.shields.io/github/license/worldbeater/avalonia.citrus.svg) ![Size](https://img.shields.io/github/repo-size/worldbeater/avalonia.citrus.svg)
+![netstandard](https://img.shields.io/badge/.NET%20Standard-2.0-green.svg) ![netstandard](https://img.shields.io/nuget/v/Citrus.Avalonia.svg) ![License](https://img.shields.io/github/license/worldbeater/avalonia.citrus.svg) ![Size](https://img.shields.io/github/repo-size/worldbeater/avalonia.citrus.svg)
 
 ### Citrus
 
@@ -8,14 +8,11 @@ Avalonia experimental theme.
 
 ### Getting Started
 
-The simplest way to get started is to add this repo as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to your existing git repository:
+The simplest way to get started is to install the library as a NuGet package:
 
-```sh
-mkdir ./external
-git submodule add git@github.com:worldbeater/Citrus.Avalonia.git ./external/citrus
-# Reference the ../external/citrus/src/Citrus.Avalonia/Citrus.Avalonia.csproj project then.
-# The ../external/citrus/src/Citrus.Avalonia.Sandbox/Citrus.Avalonia.Sandbox.csproj is 
-# the sandbox where you can browse the markup samples.
+```powershell
+Install-Package Citrus.Avalonia
+# Or 'dotnet add package Citrus.Avalonia'
 ```
 
 Then, reference the default theme (or, the night theme) from your `App.xaml` file:
@@ -48,3 +45,15 @@ Then, reference the default theme (or, the night theme) from your `App.xaml` fil
 ```
 
 Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Citrus.Avalonia/blob/master/src/Citrus.Avalonia.Sandbox/MainWindow.xaml) for more examples.
+
+### Getting Started without NuGet
+
+Another way to get started is to add this repo as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to your existing git repository:
+
+```sh
+mkdir ./external
+git submodule add git@github.com:worldbeater/Citrus.Avalonia.git ./external/citrus
+# Reference the ../external/citrus/src/Citrus.Avalonia/Citrus.Avalonia.csproj project then.
+# The ../external/citrus/src/Citrus.Avalonia.Sandbox/Citrus.Avalonia.Sandbox.csproj is 
+# the sandbox where you can browse the markup samples.
+```
