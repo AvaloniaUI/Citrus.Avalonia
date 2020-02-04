@@ -22,8 +22,9 @@ namespace Citrus.Avalonia.Sandbox
             {
                 StyleManager.Theme.Citrus => StyleManager.Theme.Sea,
                 StyleManager.Theme.Sea => StyleManager.Theme.Rust,
-                StyleManager.Theme.Rust => StyleManager.Theme.Holidays,
-                StyleManager.Theme.Holidays => StyleManager.Theme.Citrus,
+                StyleManager.Theme.Rust => StyleManager.Theme.Candy,
+                StyleManager.Theme.Candy => StyleManager.Theme.Magma,
+                StyleManager.Theme.Magma => StyleManager.Theme.Citrus,
                 _ => throw new ArgumentOutOfRangeException(nameof(styles.CurrentTheme))
             }));
         }

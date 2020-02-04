@@ -18,5 +18,5 @@
     <StyleInclude Source="avares://Citrus.Avalonia/Theme/ToggleButtonStyles.xaml"/>
     <StyleInclude Source="avares://Citrus.Avalonia/Theme/SliderStyles.xaml"/>
     <StyleInclude Source="avares://Citrus.Avalonia/Theme/NumericUpDownStyles.xaml"/>
-    <StyleInclude Source="avares://Citrus.Avalonia/Palette/HolidaysPalette.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Palette/CandyPalette.xaml"/>
 </Styles>

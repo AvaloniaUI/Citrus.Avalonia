@@ -1,13 +1,13 @@
 <Style xmlns="https://github.com/avaloniaui"
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-       xmlns:sys="clr-namespace:System;assembly=netstandard">
+       xmlns:sys="clr-namespace:System;assembly=mscorlib">
     <Style.Resources>
-<!-- #e83f4a BasicRed #689ed6 AccentBlue #dfc54a AccentYellow -->
-        <Color x:Key="ThemeAccentColor">#e83f4a</Color>
-        <Color x:Key="ThemeAccentColor2">#D4AF37</Color>
-        <Color x:Key="ThemeAccentColor3">#e83f4a</Color>
-        <Color x:Key="ThemeAccentColor4">#D82f3a</Color>
-        <Color x:Key="ThemeAccentHeaderColor">#D4AF37</Color>
+
+        <Color x:Key="ThemeAccentColor">#777777</Color>
+        <Color x:Key="ThemeAccentColor2">#777777</Color>
+        <Color x:Key="ThemeAccentColor3">#777777</Color>
+        <Color x:Key="ThemeAccentColor4">#555555</Color>
+        <Color x:Key="ThemeAccentHeaderColor">#555555</Color>
 
         <Color x:Key="ThemeCardColor">#FFFFFF</Color>
         <Color x:Key="ThemeBackgroundColor">#FFECECEC</Color>
@@ -27,11 +27,11 @@
         <Color x:Key="ThemeForegroundColor">#FF000000</Color>
         <Color x:Key="ThemeForegroundLowColor">#FF808080</Color>
         
-        <Color x:Key="HighlightColor">#689ed6</Color>
-        <Color x:Key="HighlightHoverColor">#588ee6</Color>
+        <Color x:Key="HighlightColor">#ee0000</Color>
+        <Color x:Key="HighlightHoverColor">#cc0000</Color>
         <Color x:Key="HighlightForegroundColor">#FFFFFFFF</Color>
-        <Color x:Key="ErrorColor">#D4AF37</Color>
-        <Color x:Key="ErrorLowColor">#40cfb53a</Color>
+        <Color x:Key="ErrorColor">#ee0000</Color>
+        <Color x:Key="ErrorLowColor">#30cc0000</Color>
 
         <SolidColorBrush x:Key="ThemeCardBrush" Color="{DynamicResource ThemeCardColor}"/>
         <SolidColorBrush x:Key="ThemeBackgroundBrush" Color="{DynamicResource ThemeBackgroundColor}"/>
