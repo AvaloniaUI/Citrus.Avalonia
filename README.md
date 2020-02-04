@@ -31,7 +31,8 @@ Then, reference the preffered theme from your `App.xaml` file:
          2. Uncomment *one* of the <StyleInclude /> lines below. -->
     <!-- <StyleInclude Source="avares://Citrus.Avalonia/Sea.xaml"/> -->
     <!-- <StyleInclude Source="avares://Citrus.Avalonia/Rust.xaml"/> -->
-    <!-- <StyleInclude Source="avares://Citrus.Avalonia/Holidays.xaml"/> -->
+    <!-- <StyleInclude Source="avares://Citrus.Avalonia/Candy.xaml"/> -->
+    <!-- <StyleInclude Source="avares://Citrus.Avalonia/Magma.xaml"/> -->
   </Application.Styles>
 </Application>
 ```
