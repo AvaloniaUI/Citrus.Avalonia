@@ -11,4 +11,14 @@
     <Style Selector="ComboBox:pointerover /template/ Border">
         <Setter Property="Background" Value="{DynamicResource ThemeBorderMidBrush}" />
     </Style>
+    <Style Selector="ComboBox:pointerover:focus /template/ Border">
+        <Setter Property="Background" Value="{DynamicResource ThemeBorderMidBrush}" />
+    </Style>
+    
+    <Style Selector="ComboBoxItem">
+        <Setter Property="Padding" Value="5" />
+    </Style>
+    <Style Selector="ComboBoxItem:selected">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
+    </Style>
 </Styles>

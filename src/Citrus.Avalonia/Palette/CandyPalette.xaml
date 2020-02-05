@@ -29,8 +29,8 @@
         <Color x:Key="HighlightColor">#7a48c0</Color>
         <Color x:Key="HighlightHoverColor">#6a38b0</Color>
         <Color x:Key="HighlightForegroundColor">#FFFFFFFF</Color>
-        <Color x:Key="ErrorColor">#dfbe5b</Color>
-        <Color x:Key="ErrorLowColor">#30cfae4b</Color>
+        <Color x:Key="ErrorColor">#FFFF0000</Color>
+        <Color x:Key="ErrorLowColor">#AAFF0000</Color>
 
         <SolidColorBrush x:Key="ThemeCardBrush" Color="{DynamicResource ThemeCardColor}"/>
         <SolidColorBrush x:Key="ThemeBackgroundBrush" Color="{DynamicResource ThemeBackgroundColor}"/>

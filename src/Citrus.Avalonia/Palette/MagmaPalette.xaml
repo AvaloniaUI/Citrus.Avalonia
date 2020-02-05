@@ -31,7 +31,7 @@
         <Color x:Key="HighlightHoverColor">#cc0000</Color>
         <Color x:Key="HighlightForegroundColor">#FFFFFFFF</Color>
         <Color x:Key="ErrorColor">#ee0000</Color>
-        <Color x:Key="ErrorLowColor">#30cc0000</Color>
+        <Color x:Key="ErrorLowColor">#AAcc0000</Color>
 
         <SolidColorBrush x:Key="ThemeCardBrush" Color="{DynamicResource ThemeCardColor}"/>
         <SolidColorBrush x:Key="ThemeBackgroundBrush" Color="{DynamicResource ThemeBackgroundColor}"/>
