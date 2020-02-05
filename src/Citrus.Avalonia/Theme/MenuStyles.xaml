@@ -7,14 +7,20 @@
         <Setter Property="FontSize" Value="14" />
         <Setter Property="FontFamily" Value="Ubuntu" />
     </Style>
+    <Style Selector="MenuItem:pointerover > AccessText">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
+    </Style>
+    <Style Selector="MenuItem:selected > AccessText">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
+    </Style>
+    <Style Selector="MenuItem > MenuItem > AccessText">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
+    </Style>
     <Style Selector="MenuItem">
         <Setter Property="BorderThickness" Value="0"/>
     </Style>
     <Style Selector="MenuItem:selected">
         <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush}"/>
-    </Style>
-    <Style Selector="MenuItem:selected > AccessText">
-        <Setter Property="Foreground" Value="#ffffff" />
     </Style>
     <Style Selector="MenuItem /template/ ContentPresenter#PART_HeaderPresenter">
         <Setter Property="Padding" Value="5" />
