@@ -6,7 +6,7 @@
         <Color x:Key="ThemeAccentColor2">#dfbe5b</Color>
         <Color x:Key="ThemeAccentColor3">#f37f57</Color>
         <Color x:Key="ThemeAccentColor4">#f37f57</Color>
-        <Color x:Key="ThemeAccentHeaderColor">#cfae4b</Color>
+        <Color x:Key="ThemeAccentBadgeColor">#30f37f57</Color>
 
         <Color x:Key="ThemeCardColor">#FFFFFF</Color>
         <Color x:Key="ThemeBackgroundColor">#FFECECEC</Color>
@@ -26,6 +26,7 @@
         <Color x:Key="ThemeForegroundColor">#FF000000</Color>
         <Color x:Key="ThemeForegroundLowColor">#FF808080</Color>
         
+        <Color x:Key="HighlightBadgeColor">#307a48c0</Color>
         <Color x:Key="HighlightColor">#7a48c0</Color>
         <Color x:Key="HighlightHoverColor">#6a38b0</Color>
         <Color x:Key="HighlightForegroundColor">#FFFFFFFF</Color>
@@ -49,13 +50,14 @@
         <SolidColorBrush x:Key="ThemeForegroundLowBrush" Color="{DynamicResource ThemeForegroundLowColor}"/>
 
         <SolidColorBrush x:Key="HighlightBrush" Color="{DynamicResource HighlightColor}"/>
+        <SolidColorBrush x:Key="HighlightBadgeBrush" Color="{DynamicResource HighlightBadgeColor}"/>
         <SolidColorBrush x:Key="HighlightHoverBrush" Color="{DynamicResource HighlightHoverColor}"/>
         <SolidColorBrush x:Key="HighlightForegroundBrush" Color="{DynamicResource HighlightForegroundColor}"/>
         <SolidColorBrush x:Key="ThemeAccentBrush" Color="{DynamicResource ThemeAccentColor}"/>
         <SolidColorBrush x:Key="ThemeAccentBrush2" Color="{DynamicResource ThemeAccentColor2}"/>
         <SolidColorBrush x:Key="ThemeAccentBrush3" Color="{DynamicResource ThemeAccentColor3}"/>
         <SolidColorBrush x:Key="ThemeAccentBrush4" Color="{DynamicResource ThemeAccentColor4}"/>
-        <SolidColorBrush x:Key="ThemeAccentHeaderBrush" Color="{DynamicResource ThemeAccentHeaderColor}"/>
+        <SolidColorBrush x:Key="ThemeAccentBadgeBrush" Color="{DynamicResource ThemeAccentBadgeColor}"/>
         <SolidColorBrush x:Key="ErrorBrush" Color="{DynamicResource ErrorColor}"/>
         <SolidColorBrush x:Key="ErrorLowBrush" Color="{DynamicResource ErrorLowColor}"/>
 

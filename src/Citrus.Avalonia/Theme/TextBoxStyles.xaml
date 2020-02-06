@@ -38,4 +38,22 @@
             </DataTemplate>
         </Setter>
     </Style>
+    
+    <Style Selector="TextBox.Badge">
+        <Setter Property="IsEnabled" Value="False"/>
+        <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="Background" Value="{DynamicResource HighlightBadgeBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource HighlightBrush}"/>
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Padding" Value="10 5" />
+    </Style>
+    
+    <Style Selector="TextBox.PrimaryBadge">
+        <Setter Property="IsEnabled" Value="False"/>
+        <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="Background" Value="{DynamicResource ThemeAccentBadgeBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ThemeAccentBrush}"/>
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Padding" Value="10 5" />
+    </Style>
 </Styles>

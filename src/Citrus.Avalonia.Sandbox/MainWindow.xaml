@@ -135,7 +135,11 @@
                 <Border Classes="Card">
                     <StackPanel>
                         <TextBlock Classes="Heading" Text="Rich controls" />
-                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Classes="Badge" Text="Regular badge" Margin="0 5 10 5" />
+                            <TextBox Classes="PrimaryBadge" Text="Primary badge" />
+                        </StackPanel>
+
                         <!-- List views -->
                         <ListBox VirtualizationMode="None">
                             <ListBoxItem>
@@ -185,7 +189,7 @@
                         </Expander>
                         
                         <!-- Tree control -->
-                        <Grid Margin="0 10">
+                        <Grid Margin="0 10 0 0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="10"/>
