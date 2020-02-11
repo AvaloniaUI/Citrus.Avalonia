@@ -35,4 +35,4 @@ jobs:
     buildPlatform: 'Any CPU'
     buildConfiguration: 'Release'
   steps:
-  - script: cd ./Source && dotnet build --configuration $(buildConfiguration)
+  - script: cd ./src && dotnet build --configuration $(buildConfiguration)
