@@ -30,7 +30,7 @@
         <Setter Property="Margin" Value="0" />
     </Style>
     <Style Selector="Expander /template/ ContentPresenter">
-        <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}" />
     </Style>
     <Style Selector="Expander /template/ ToggleButton#PART_toggle /template/ Border">
         <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush}" />
