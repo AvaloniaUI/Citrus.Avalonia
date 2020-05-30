@@ -1,10 +1,10 @@
-![netstandard](https://img.shields.io/badge/.NET%20Standard-2.0-green.svg) [![nuget](https://img.shields.io/nuget/v/Citrus.Avalonia.svg)](https://www.nuget.org/packages/Citrus.Avalonia) ![License](https://img.shields.io/github/license/worldbeater/avalonia.citrus.svg) ![Size](https://img.shields.io/github/repo-size/worldbeater/avalonia.citrus.svg)
+[![Build Status](https://worldbeater.visualstudio.com/Citrus.Avalonia/_apis/build/status/worldbeater.Citrus.Avalonia)](https://worldbeater.visualstudio.com/Citrus.Avalonia/_build/latest?definitionId=1) ![netstandard](https://img.shields.io/badge/.NET%20Standard-2.0-green.svg) [![nuget](https://img.shields.io/nuget/v/Citrus.Avalonia.svg)](https://www.nuget.org/packages/Citrus.Avalonia) ![License](https://img.shields.io/github/license/worldbeater/avalonia.citrus.svg) ![Size](https://img.shields.io/github/repo-size/worldbeater/avalonia.citrus.svg)
 
 ### Citrus
 
 Avalonia experimental theme.
 
-<img src="./assets/demo.gif" width="800">
+<img src="./assets/picture.jpeg" width="600">
 
 ### Getting Started
 
@@ -37,7 +37,9 @@ Then, reference the preffered theme from your `App.xaml` file:
 </Application>
 ```
 
-Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Citrus.Avalonia/blob/master/src/Citrus.Avalonia.Sandbox/MainWindow.xaml) for more examples. See [`StyleManager.cs`](https://github.com/worldbeater/Citrus.Avalonia/blob/master/src/Citrus.Avalonia.Sandbox/StyleManager.cs) to learn how to change color scheme at runtime. 
+Done! Now the templates of all default controls are updated. See the [sandbox project](https://github.com/worldbeater/Citrus.Avalonia/blob/master/src/Citrus.Avalonia.Sandbox/MainWindow.xaml) for more examples. See [`StyleManager.cs`](https://github.com/worldbeater/Citrus.Avalonia/blob/master/src/Citrus.Avalonia.Sandbox/StyleManager.cs) to learn how to change color scheme at runtime.
+
+<img src="./assets/demo.gif" width="500">
 
 ### Getting Started without NuGet
 
