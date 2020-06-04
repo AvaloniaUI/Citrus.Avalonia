@@ -19,11 +19,7 @@ jobs:
       msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
-  - task: NuGetCommand@2
-    inputs:
-      command: pack
-      packagesToPack: '**/Citrus.Avalonia.csproj'
-      versioningScheme: 'byPrereleaseNumber'
+  - script: cd ./src/Citrus.Avalonia && dotnet pack --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
