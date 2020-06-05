@@ -21,7 +21,13 @@ namespace Citrus.Avalonia.Sandbox
             
             // We add the style to the window styles section, so it
             // will override the default style defined in App.xaml. 
-            window.Styles.Add(_citrusStyle);
+            if (window.Styles.Count == 0)
+                window.Styles.Add(_citrusStyle);
+            
+            // If there are styles defined already, we assume that
+            // the first style imported it related to citrus.
+            // This allows one to override citrus styles.
+            else window.Styles[0] = _citrusStyle;
         }
 
         public Theme CurrentTheme { get; private set; } = Theme.Citrus;
@@ -44,6 +50,21 @@ namespace Citrus.Avalonia.Sandbox
             CurrentTheme = theme;
         }
         
+        public void UseNextTheme()
+        {
+            // This method allows to support switching among all
+            // supported color schemes one by one.
+            UseTheme(CurrentTheme switch
+            {
+                Theme.Citrus => Theme.Sea,
+                Theme.Sea => Theme.Rust,
+                Theme.Rust => Theme.Candy,
+                Theme.Candy => Theme.Magma,
+                Theme.Magma => Theme.Citrus,
+                _ => throw new ArgumentOutOfRangeException(nameof(CurrentTheme))
+            });
+        }
+
         private static StyleInclude CreateStyle(string url)
         {
             var self = new Uri("resm:Styles?assembly=Citrus.Avalonia.Sandbox");
