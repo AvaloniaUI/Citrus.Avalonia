@@ -19,11 +19,21 @@ jobs:
       msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
-  - script: cd ./src/Citrus.Avalonia && dotnet pack --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+  - script: cd ./src/Citrus.Avalonia && dotnet pack --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory) /p:VersionSuffix="$(Build.BuildNumber)"
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
       artifactName: 'Citrus.Avalonia'
+  - task: NuGetCommand@2
+    displayName: 'nuget push'
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+    inputs:
+      command: 'push'
+      feedsToUse: 'select'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+      nuGetFeedType: 'internal'
+      publishVstsFeed: 'Citrus.Avalonia/Citrus-CI'
+      versioningScheme: 'byPrereleaseNumber'
 - job: Linux
   pool:
     vmImage: 'ubuntu 16.04'
