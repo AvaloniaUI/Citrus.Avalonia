@@ -52,3 +52,10 @@ git submodule add git@github.com:worldbeater/Citrus.Avalonia.git ./external/citr
 # The ../external/citrus/src/Citrus.Avalonia.Sandbox/Citrus.Avalonia.Sandbox.csproj is 
 # the sandbox where you can browse the markup samples.
 ```
+
+### Technologies and Tools Used
+
+- <a href="https://github.com/avaloniaui">AvaloniaUI</a> cross-platform XAML-based GUI framework
+- <a href="https://reactiveui.net/docs/handbook/view-models/boilerplate-code">ReactiveUI.Fody</a> for MVVM implementation in the sandbox project
+- <a href="https://github.com/reactiveui/reactiveui.validation">ReactiveUI.Validation</a> for `INotifyDataErrorInfo` validations
+- <a href="https://www.jetbrains.com/rider/">JetBrains Rider</a> cross-platform C# IDE
