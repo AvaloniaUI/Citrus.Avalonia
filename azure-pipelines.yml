@@ -1,5 +1,5 @@
 trigger:
-- master
+- main
 jobs:
 - job: Windows
   pool:
@@ -26,7 +26,7 @@ jobs:
       artifactName: 'Citrus.Avalonia'
   - task: NuGetCommand@2
     displayName: 'nuget push'
-    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
     inputs:
       command: 'push'
       feedsToUse: 'select'
