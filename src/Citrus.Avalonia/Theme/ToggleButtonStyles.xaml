@@ -5,6 +5,7 @@
         <Setter Property="Padding" Value="14" />
         <Setter Property="Background" Value="{DynamicResource ThemeBorderHighBrush}" />
     </Style>
+
     <Style Selector="ToggleButton > TextBlock">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>

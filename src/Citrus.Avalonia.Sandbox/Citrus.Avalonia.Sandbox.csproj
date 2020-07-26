@@ -6,10 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.9.0" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.0" />
-    <PackageReference Include="Avalonia.LinuxFramebuffer" Version="0.9.0" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.0" />
+    <PackageReference Include="Avalonia" Version="0.10.0-preview2" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-preview2" />
+    <PackageReference Include="Avalonia.LinuxFramebuffer" Version="0.10.0-preview2" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.0-preview2" />
     <PackageReference Include="ReactiveUI.Validation" Version="1.4.7" />
     <PackageReference Include="ReactiveUI.Fody" Version="11.1.12" />
   </ItemGroup>
@@ -21,10 +21,21 @@
     <AvaloniaResource Include="**\*.xaml">
       <SubType>Designer</SubType>
     </AvaloniaResource>
+    <Watch Include="**\*.xaml" />
   </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\Citrus.Avalonia\Citrus.Avalonia.csproj" />
   </ItemGroup>
+
+  <Target Name="Preview">
+    <Error Condition="$(XamlFile) == ''" Text="Specify /p:XamlFile=path" />
+    <PropertyGroup>
+      <PreviewerPort Condition="'$(PreviewerPort)' == ''">6001</PreviewerPort>
+      <FullPathToPreviewXaml>$([System.IO.Path]::GetFullPath('$(XamlFile)'))</FullPathToPreviewXaml>
+      <FileUriToPreviewXaml>file:///$(FullPathToPreviewXaml.Replace('\', '/').TrimStart('/'))</FileUriToPreviewXaml>
+    </PropertyGroup>
+    <Exec Command="dotnet exec --runtimeconfig $(ProjectRuntimeConfigFilePath) --depsfile $(ProjectDepsFilePath) $(PkgAvalonia)/tools/netcoreapp2.0/designer/Avalonia.Designer.HostApp.dll --method html --html-url http://127.0.0.1:$(PreviewerPort) --transport $(FileUriToPreviewXaml) $(TargetPath)" />
+  </Target>
 
 </Project>

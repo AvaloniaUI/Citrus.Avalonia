@@ -18,7 +18,7 @@
     <Style Selector="ComboBoxItem">
         <Setter Property="Padding" Value="5" />
     </Style>
-    <Style Selector="ComboBoxItem:selected">
+    <Style Selector="ComboBoxItem:selected > TextBlock">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>
 </Styles>

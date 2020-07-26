@@ -152,13 +152,13 @@
   <Style Selector="CalendarItem:calendardisabled /template/ Rectangle#DisabledVisual">
     <Setter Property="IsVisible" Value="True"/>
   </Style>
-  <Style Selector="CalendarDayButton:selected /template/ ContentControl#Content">
+  <Style Selector="CalendarDayButton:selected /template/ ContentControl#Content > TextBlock">
     <Setter Property="Opacity" Value="1"/>
-    <Setter Property="Foreground" Value="#ffffff"/>
+    <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}"/>
   </Style>
-  <Style Selector="CalendarDayButton:today /template/ ContentControl#Content">
+  <Style Selector="CalendarDayButton:today /template/ ContentControl#Content > TextBlock">
     <Setter Property="Opacity" Value="1"/>
-    <Setter Property="Foreground" Value="#ffffff"/>
+    <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}"/>
   </Style>
   
   <Style Selector="CalendarButton:btnfocused /template/ Rectangle#FocusVisual">

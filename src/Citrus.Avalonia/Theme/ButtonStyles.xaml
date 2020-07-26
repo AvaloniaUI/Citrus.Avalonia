@@ -9,6 +9,7 @@
     <Style Selector="Button > TextBlock">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>
+
     <Style Selector="Button /template/ ContentPresenter">
         <Setter Property="CornerRadius" Value="5" />
     </Style>

@@ -8,16 +8,19 @@
     </Style>
 
     <Style Selector="TabItem">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
         <Setter Property="FontSize" Value="12"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush2}"/>
-        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}"/>
         <Setter Property="Margin" Value="0 0 0 0"/>
         <Setter Property="Padding" Value="14 0"/>
         <Setter Property="BorderThickness" Value="0 0 0 2"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Height" Value="54"/>
+    </Style>
+    <Style Selector="TabItem > TextBlock">
+        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}"/>
     </Style>
     
     <Style Selector="TabItem:pointerover /template/ ContentPresenter#PART_ContentPresenter">

@@ -1,0 +1,21 @@
+<Styles xmlns="https://github.com/avaloniaui" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/TextBlockStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/ButtonStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/TextBoxStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/BorderStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/TabControlStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/ComboBoxStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/ProgressBarStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/ListBoxStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/ExpanderStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/TreeViewStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/CalendarStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/MenuStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/CheckBoxStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/RadioButtonStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/ToggleButtonStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/SliderStyles.xaml"/>
+    <StyleInclude Source="avares://Citrus.Avalonia/Theme/NumericUpDownStyles.xaml"/>
+</Styles>

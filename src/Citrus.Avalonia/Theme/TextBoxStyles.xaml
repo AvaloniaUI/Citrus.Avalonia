@@ -3,6 +3,7 @@
     <Style Selector="TextBox">
         <Setter Property="FontFamily" Value="Ubuntu" />
         <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
         <Setter Property="Background" Value="{DynamicResource ThemeBorderLowBrush}" />
         <Setter Property="Padding" Value="10" />
         <Setter Property="Margin" Value="0 5" />
