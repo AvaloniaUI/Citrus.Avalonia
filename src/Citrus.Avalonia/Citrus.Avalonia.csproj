@@ -2,7 +2,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <IsPackable>true</IsPackable>
-        <VersionPrefix>1.3.0</VersionPrefix>
+        <VersionPrefix>1.3.0-preview</VersionPrefix>
         <Authors>Artyom Gorchakov and Contributors</Authors>
         <Copyright>Copyright (c) 2020 Artyom Gorchakov</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
