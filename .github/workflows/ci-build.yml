@@ -35,11 +35,8 @@ jobs:
       run: dotnet restore
       working-directory: src
 
-    - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild@v1
-
     - name: Build
-      run: msbuild /t:build,pack /maxcpucount /p:NoPackageAnalysis=true /verbosity:minimal /p:Configuration=${{ env.configuration }}
+      run: dotnet msbuild /t:build,pack /maxcpucount /p:NoPackageAnalysis=true /verbosity:minimal /p:Configuration=${{ env.configuration }}
       working-directory: src
 
   windows-build:
