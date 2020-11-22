@@ -1,0 +1,16 @@
+{
+    "version": "1.3.0-preview",
+    "publicReleaseRefSpec": [
+      "^refs/heads/main$", // we release out of main
+      "^refs/heads/rel/\\d+\\.\\d+\\.\\d+" // we also release branches starting with rel/N.N.N
+    ],
+    "nugetPackageVersion":{
+      "semVer": 2
+    },
+    "cloudBuild": {
+      "setVersionVariables": true,
+      "buildNumber": {
+        "enabled": false
+      }
+    }
+  }
