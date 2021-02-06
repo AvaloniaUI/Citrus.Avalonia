@@ -12,6 +12,8 @@
         <PackageTags>avalonia;avaloniaui;citrus;ui;theme</PackageTags>
         <RepositoryUrl>https://github.com/worldbeater/citrus.avalonia</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IsPackable>true</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
