@@ -7,7 +7,7 @@ using ReactiveUI.Validation.Helpers;
 
 namespace Citrus.Avalonia.Sandbox
 {
-    public sealed class MainWindowViewModel : ReactiveValidationObject<MainWindowViewModel>
+    public sealed class MainWindowViewModel : ReactiveValidationObject
     {
         public MainWindowViewModel(StyleManager styles)
         {
