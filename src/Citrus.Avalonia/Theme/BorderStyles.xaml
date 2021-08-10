@@ -3,7 +3,7 @@
     <Style Selector="Border.Card">
         <Setter Property="Padding" Value="20" />
         <Setter Property="CornerRadius" Value="5" />
-        <Setter Property="BorderThickness" Value="2 1 2 4" />
+        <Setter Property="BorderThickness" Value="2" />
         <Setter Property="BorderBrush" Value="{DynamicResource ThemeCardBrush}" />
         <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}" />
         <Setter Property="Margin" Value="7" />

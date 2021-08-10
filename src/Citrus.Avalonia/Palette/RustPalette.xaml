@@ -56,11 +56,22 @@
         <SolidColorBrush x:Key="ErrorBrush" Color="{DynamicResource ErrorColor}"/>
         <SolidColorBrush x:Key="ErrorLowBrush" Color="{DynamicResource ErrorLowColor}"/>
 
+        <SolidColorBrush x:Key="DatePickerFlyoutPresenterHighlightFill" Color="{DynamicResource ThemeAccentColor}" Opacity="0.4" />
+        <SolidColorBrush x:Key="TimePickerFlyoutPresenterHighlightFill" Color="{DynamicResource ThemeAccentColor}" Opacity="0.4" />
+
+        <SolidColorBrush x:Key="ThemeControlTransparentBrush" Color="Transparent" />
+      
+        <Thickness x:Key="ThemeBorderThickness">1,1,1,1</Thickness>
         <sys:Double x:Key="ThemeDisabledOpacity">0.5</sys:Double>
+
         <sys:Double x:Key="FontSizeSmall">13</sys:Double>
         <sys:Double x:Key="FontSizeNormal">14</sys:Double>
         <sys:Double x:Key="FontSizeLarge">14</sys:Double>
 
-        <sys:Double x:Key="ScrollBarThickness">10</sys:Double>
+        <sys:Double x:Key="ScrollBarThickness">18</sys:Double>
+        <sys:Double x:Key="ScrollBarThumbThickness">8</sys:Double>
+
+        <sys:Double x:Key="IconElementThemeHeight">20</sys:Double>
+        <sys:Double x:Key="IconElementThemeWidth">20</sys:Double>
     </Style.Resources>
 </Style>
