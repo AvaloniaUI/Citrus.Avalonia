@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.8" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.7" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.8" />
     <PackageReference Include="Avalonia.LinuxFramebuffer" Version="0.10.7" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.7" />
     <PackageReference Include="ReactiveUI.Validation" Version="2.2.1" />
