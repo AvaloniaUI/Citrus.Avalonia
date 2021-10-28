@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="0.10.8" />
+        <PackageReference Include="Avalonia" Version="0.10.10" />
     </ItemGroup>
 
     <ItemGroup>
