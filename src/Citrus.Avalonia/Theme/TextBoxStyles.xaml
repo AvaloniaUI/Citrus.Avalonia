@@ -8,7 +8,7 @@
         <Setter Property="Padding" Value="10" />
         <Setter Property="Margin" Value="0 5" />
     </Style>
-    <Style Selector="TextBox /template/ Border">
+    <Style Selector="TextBox">
         <Setter Property="CornerRadius" Value="5" />
     </Style>
     <Style Selector="TextBox:pointerover /template/ Border">

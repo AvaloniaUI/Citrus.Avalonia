@@ -6,33 +6,33 @@
         <Setter Property="Margin" Value="0 5" />
         <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
     </Style>
-    <Style Selector="Button > TextBlock">
+    <Style Selector="Button">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>
 
-    <Style Selector="Button /template/ ContentPresenter">
+    <Style Selector="Button">
         <Setter Property="CornerRadius" Value="5" />
     </Style>
     <Style Selector="Button:pointerover">
         <Setter Property="Background" Value="{DynamicResource HighlightHoverBrush}" />
     </Style>
-    <Style Selector="Button:pressed /template/ ContentPresenter">
+    <Style Selector="Button:pressed">
         <Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
     </Style>
     
     <Style Selector="Button.Primary">
         <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush}" />
     </Style>
-    <Style Selector="Button.Primary > TextBlock">
+    <Style Selector="Button.Primary">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>
-    <Style Selector="Button.Primary /template/ ContentPresenter">
+    <Style Selector="Button.Primary">
         <Setter Property="CornerRadius" Value="5" />
     </Style>
     <Style Selector="Button.Primary:pointerover">
         <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush4}" />
     </Style>
-    <Style Selector="Button.Primary:pressed /template/ ContentPresenter">
+    <Style Selector="Button.Primary:pressed">
         <Setter Property="Background" Value="{DynamicResource ThemeAccentBrush}" />
     </Style>
 </Styles>

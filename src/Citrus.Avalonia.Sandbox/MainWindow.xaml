@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Background="{DynamicResource ThemeBackgroundColor}"
         x:Class="Citrus.Avalonia.Sandbox.MainWindow"
-        Width="920" Height="630">
+        Width="950" Height="630">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
