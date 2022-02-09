@@ -41,4 +41,7 @@
     <Style Selector="Expander:down:expanded /template/ ToggleButton#PART_toggle /template/ Path">
         <Setter Property="Fill" Value="#ffffff" />
     </Style>
+    <Style Selector="Expander /template/ ToggleButton#PART_toggle TextBlock">
+        <Setter Property="Foreground" Value="#ffffff" />
+    </Style>
 </Styles>

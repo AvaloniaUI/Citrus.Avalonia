@@ -4,18 +4,20 @@
         <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
         <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}" />
     </Style>
-    <Style Selector="MenuItem > AccessText">
+    <Style Selector="MenuItem">
         <Setter Property="FontSize" Value="14" />
         <Setter Property="FontFamily" Value="Ubuntu" />
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}" />
     </Style>
-    <Style Selector="MenuItem:pointerover > AccessText">
+    <Style Selector="MenuItem:pointerover">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>
-    <Style Selector="MenuItem:selected > AccessText">
+    <Style Selector="MenuItem:selected">
         <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
     </Style>
-    <Style Selector="MenuItem > MenuItem > AccessText">
-        <Setter Property="Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
+    <Style Selector="MenuItem > MenuItem">
+        <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}" />
+        <Setter Property="Background" Value="{DynamicResource ThemeCardBrush}" />
     </Style>
     <Style Selector="MenuItem">
         <Setter Property="BorderThickness" Value="0"/>

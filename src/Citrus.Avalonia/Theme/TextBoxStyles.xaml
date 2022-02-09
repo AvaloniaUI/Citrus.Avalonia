@@ -11,6 +11,12 @@
     <Style Selector="TextBox">
         <Setter Property="CornerRadius" Value="5" />
     </Style>
+    <Style Selector="ComboBox">
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+    <Style Selector="NumericUpDown">
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
     <Style Selector="TextBox:pointerover /template/ Border">
         <Setter Property="Background" Value="{DynamicResource ThemeBorderMidBrush}" />
     </Style>
