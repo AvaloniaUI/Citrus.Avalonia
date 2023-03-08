@@ -12,7 +12,7 @@
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.18" />
     <PackageReference Include="Avalonia.LinuxFramebuffer" Version="0.10.18" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.18" />
-    <PackageReference Include="ReactiveUI.Validation" Version="3.0.22" />
+    <PackageReference Include="ReactiveUI.Validation" Version="3.1.7" />
     <PackageReference Include="ReactiveUI.Fody" Version="18.4.1" />
   </ItemGroup>
   
