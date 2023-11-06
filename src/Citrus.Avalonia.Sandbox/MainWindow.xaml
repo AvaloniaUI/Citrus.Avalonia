@@ -141,7 +141,7 @@
                         </StackPanel>
 
                         <!-- List views -->
-                        <ListBox VirtualizationMode="None">
+                        <ListBox>
                             <ListBoxItem>
                                 <StackPanel>
                                     <TextBlock Text="Lorem ipsum dolor sit amet"
