@@ -35,7 +35,7 @@ jobs:
         setAllVars: true
 
     - name: Build
-      run: dotnet pack src\Citrus.Avalonia\Citrus.Avalonia.csproj --configuration ${{ env.configuration }}
+      run: dotnet build --configuration ${{ env.configuration }}
       working-directory: src
 
     - name: Create NuGet Artifacts
