@@ -1,5 +1,5 @@
 {
-    "version": "1.6",
+    "version": "1.7",
     "publicReleaseRefSpec": [
       "^refs/heads/main$", // we release out of main
       "^refs/heads/rel/\\d+\\.\\d+\\.\\d+" // we also release branches starting with rel/N.N.N
