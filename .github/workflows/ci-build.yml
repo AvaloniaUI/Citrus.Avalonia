@@ -13,7 +13,7 @@ env:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     outputs:
       nbgv: ${{ steps.nbgv.outputs.SemVer2 }}
     steps:
@@ -34,19 +34,12 @@ jobs:
       with:
         setAllVars: true
 
-    - name: NuGet Restore
-      run: dotnet restore
-      working-directory: src
-
-    - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild@v1
-
     - name: Build
-      run: dotnet build --configuration ${{ env.configuration }}
+      run: dotnet pack src\Citrus.Avalonia\Citrus.Avalonia.csproj --configuration ${{ env.configuration }}
       working-directory: src
 
     - name: Create NuGet Artifacts
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v4
       with:
         name: nuget
         path: '**/*.nupkg'
@@ -62,7 +55,7 @@ jobs:
         fetch-depth: 0
 
     - name: Download NuGet Packages
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: nuget
 
