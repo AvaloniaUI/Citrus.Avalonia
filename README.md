@@ -22,13 +22,10 @@ Then, reference the preffered theme from your `App.xaml` file:
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="YourNamespace.App">
   <Application.Styles>
-    <!-- The line below is the only thing you need to get started.
-         Tested with Avalonia 0.9.0 only, although not with all controls. -->
+    <SimpleTheme />
     <StyleInclude Source="avares://Citrus.Avalonia/Citrus.xaml"/>
 
-    <!-- To use other themes:
-         1. Comment out *all* of the <StyleInclude /> lines.
-         2. Uncomment *one* of the <StyleInclude /> lines below. -->
+    <!-- To use other themes: -->
     <!-- <StyleInclude Source="avares://Citrus.Avalonia/Sea.xaml"/> -->
     <!-- <StyleInclude Source="avares://Citrus.Avalonia/Rust.xaml"/> -->
     <!-- <StyleInclude Source="avares://Citrus.Avalonia/Candy.xaml"/> -->
