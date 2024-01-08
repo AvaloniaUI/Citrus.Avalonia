@@ -17,7 +17,7 @@ namespace Citrus.Avalonia.Sandbox
                 .Configure<App>()
                 .UsePlatformDetect()
                 .With(new X11PlatformOptions {EnableMultiTouch = true, UseDBusMenu = true})
-                .With(new Win32PlatformOptions {EnableMultitouch = true, AllowEglInitialization = true})
+                .With(new Win32PlatformOptions {RenderingMode = new Win32RenderingMode[] { Win32RenderingMode.AngleEgl }})
                 .UseSkia()
                 .UseReactiveUI()
                 .UseManagedSystemDialogs();

@@ -2,6 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="Citrus.Avalonia.Sandbox.App">
     <Application.Styles>
+        <SimpleTheme />
         <!-- 
         Note: In this project, the <StyleInclude /> line below has no affect.
         This happens because we override the styles in the main window styles 
