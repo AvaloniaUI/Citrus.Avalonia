@@ -47,7 +47,7 @@ Another way to get started is to add this repo as a [submodule](https://git-scm.
 
 ```sh
 mkdir ./external
-git submodule add git@github.com:worldbeater/Citrus.Avalonia.git ./external/citrus
+git submodule add git@github.com:AvaloniaUI/Citrus.Avalonia.git ./external/citrus
 # Reference the ../external/citrus/src/Citrus.Avalonia/Citrus.Avalonia.csproj project then.
 # The ../external/citrus/src/Citrus.Avalonia.Sandbox/Citrus.Avalonia.Sandbox.csproj is 
 # the sandbox where you can browse the markup samples.
